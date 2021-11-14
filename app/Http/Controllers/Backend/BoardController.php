@@ -8,9 +8,12 @@ use Illuminate\Http\Request;
 
 class BoardController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
         $items = Item::all();
+        if($request->has('search')){
+            $items = Item::where('name', 'like', "%{$request->search}%")->orWhere('model', 'like', "%{$request->search}%")->orWhere('description', 'like', "%{$request->search}%")->orWhere('url', 'like', "%{$request->search}%")->get();
+        }
         return view('board.index', compact('items'));
     }
 }
