@@ -45,7 +45,6 @@
                         <td>{{ $item->url }}</td>
                         <td>{{ $item->amount }}</td>
                         <td>{{ $item->all_amount }}</td>
-                        <td>{{ $item->image }}</td>
                         <td>
                             <img src="items/fetch_image/{{ $item->id }}"  class="img-thumbnail" width="75" />
                         </td>
