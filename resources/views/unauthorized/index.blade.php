@@ -14,7 +14,7 @@
                                 <input type="search" name="search" class="form-control mb-2" id="inlineFormInput" placeholder="Search">
                             </div>
                             <div class="col-auto">
-                                <button type="submit" class="btn btn-primary mb-2">Submit</button>
+                                <button type="submit" class="btn btn-primary mb-2">Search</button>
                             </div>
                         </div>
                     </form>
