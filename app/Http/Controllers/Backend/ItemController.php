@@ -8,8 +8,7 @@ use App\Http\Requests\ItemUpdateRequest;
 use App\Models\Item;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Response;
-use Intervention\Image\Facades\Image;
-use PDF;
+use Image;
 
 class ItemController extends Controller
 {
