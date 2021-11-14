@@ -5,6 +5,22 @@
         <h1 class="h3 mb-0 text-gray-800">Equipment summary</h1>
     </div>
     <div class="card mx-auto">
+        <div class="card-header"><div class="row">
+                <div class="col">
+                    <form method="GET" action="{{ route('unauthorized.index') }}">
+                        <div class="form-row align-items-center">
+                            <div class="col-auto">
+                                <label class="sr-only" for="inlineFormInput">Search</label>
+                                <input type="search" name="search" class="form-control mb-2" id="inlineFormInput" placeholder="Search">
+                            </div>
+                            <div class="col-auto">
+                                <button type="submit" class="btn btn-primary mb-2">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
         <div class="card-body">
             <table class="table">
                 <thead>

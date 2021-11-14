@@ -26,6 +26,7 @@ Route::get('/unauthorized', function () {
     return view('unauthorized.index');
 });
 Route::get('/unauthorized', [UnauthorizedController::class, 'index'])->name('unauthorized');
+Route::resource('unauthorized', UnauthorizedController::class);
 
 Auth::routes();
 
