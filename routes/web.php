@@ -5,6 +5,7 @@ use App\Http\Controllers\Backend\ChangePasswordController;
 use App\Http\Controllers\Backend\ItemController;
 use App\Http\Controllers\Backend\UnauthorizedController;
 use App\Http\Controllers\Backend\UserController;
+use App\Http\Controllers\DynamicPDFController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -37,3 +38,5 @@ Route::resource('items', ItemController::class);
 Route::resource('board', BoardController::class);
 Route::post('users/{user}/change-password', [ChangePasswordController::class, 'change_password'])->name('users.change.password');
 Route::get('items/fetch_image/{id}', [ItemController::class, 'fetch_image']);
+Route::get('dynamic_pdf', [DynamicPDFController::class, 'index']);
+Route::get('/dynamic_pdf/pdf', [DynamicPDFController::class, 'pdf']);

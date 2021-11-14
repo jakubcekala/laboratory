@@ -67,7 +67,7 @@
                 <div class="bg-white py-2 collapse-inner rounded">
                     <a class="collapse-item" href="{{ route('users.index') }}">Users</a>
                     <a class="collapse-item" href="{{ route('items.index') }}">Equipment</a>
-                    <a class="collapse-item" href="{{ route('items.index') }}">Generate report</a>
+                    <a class="collapse-item" href="{{ url('/dynamic_pdf') }}">Generate report</a>
                 </div>
             </div>
         </li>
